@@ -7,11 +7,111 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <div class="box"></div>
+    <header>
+        <div class="top">
+            <div class="hamburger"></div>
+            <div class="logo"></div>
+            <div class="message"></div>
+        </div>
+        <div class="banner">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"></div>
+                  <div class="swiper-slide"></div>
+                  <div class="swiper-slide"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+        </div>
+        <div class="news-box">
+            <div class="news">
+                <div class="news-icon"></div>
+                <marquee>祝您投注運彩愉快，感謝您的光臨。</marquee>
+            </div>
+            <div class="pe-live">
+                <div class="pe-live-icon"></div>
+                <div>熱門賽事</div>
+            </div>
+        </div>
+        <div class="user-box">
+            <div class="left">
+                <div class="left-top">
+                     <div class="user">user545</div>
+                     <div class="vip0"></div>
+                </div>
+               <div class="left-bottom">
+                   <span>NT$ 0.00</span>
+                   <div>?</div>
+               </div>
+            </div>
+            <div class="right">
+               <ul>
+                   <li>
+                       <div class="img in"></div>
+                       <div class="text">充值</div>
+                   </li>
+                   <li>
+                    <div class="img out"></div>
+                    <div class="text">提領</div>
+                   </li>
+                   <li>
+                    <div class="img sale"></div>
+                    <div class="text">優惠</div>
+                   </li>
+                   <li>
+                    <div class="img score"></div>
+                    <div class="text">及時比分</div>
+                   </li>
+               </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-left">
+            <div class="main-left-shadwo">
+                <div class="main-left-btn-1">
+                    <div class="text">
+                        市場
+                        <div>列表</div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-left-btn"></div>
+            <div class="main-left-btn"></div>
+            <div class="main-left-btn"></div>
+        </div>
+        <div class="main-right"></div>
+    </main>
+    
+   <div class="bg"></div>
+
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 </body>
 </html>

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -48,8 +49,307 @@ table {
   border-spacing: 0;
 }
 
-.box {
-  width: 500px;
-  height: 500px;
-  background-color: aqua;
+html body {
+  width: 100%;
+  height: 100%;
+  font-family: 微軟正黑體;
+  position: relative;
+  overflow: hidden;
+}
+html body header {
+  width: 100%;
+  height: 79vw;
+}
+html body header .top {
+  width: 100%;
+  height: 10vw;
+  background: #281600;
+  position: relative;
+  border-radius: 0 0 20px 20px;
+  -webkit-box-shadow: 2px 2px 4px #00000078;
+          box-shadow: 2px 2px 4px #00000078;
+}
+html body header .top .hamburger {
+  width: 5vw;
+  height: 7vw;
+  background: url(../img/hamburger.png) no-repeat;
+  background-size: 100%;
+  position: absolute;
+  margin: 2.5vw 0 0 4vw;
+}
+html body header .top .logo {
+  width: 16vw;
+  height: 4vw;
+  background: url(../img/logo.png) no-repeat;
+  background-size: 100%;
+  position: absolute;
+  padding-top: 10px;
+  margin: 3vw 0 0 41vw;
+}
+html body header .top .message {
+  width: 5vw;
+  height: 8vw;
+  background: url(../img/message.png) no-repeat;
+  background-size: 100%;
+  position: absolute;
+  margin: 2.5vw 0 0 90vw;
+}
+html body header .banner {
+  width: 90%;
+  height: 40vw;
+  margin: auto;
+  margin-top: 2.5vw;
+  padding: 0;
+  position: relative;
+}
+html body header .banner .swiper {
+  width: 100%;
+  height: 42vw;
+}
+html body header .banner .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  height: 100%;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+html body header .banner .swiper-horizontal > .swiper-pagination-bullets, html body header .banner .swiper-pagination-bullets.swiper-pagination-horizontal, html body header .banner .swiper-pagination-custom, html body header .banner .swiper-pagination-fraction {
+  bottom: 16px;
+}
+html body header .banner .swiper-pagination-bullet {
+  background: #af650e;
+  outline: none;
+}
+html body header .banner .swiper-slide {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background: url(../img/banner.png) no-repeat;
+  background-size: 100%;
+}
+html body header .news-box {
+  width: 100%;
+  height: 8vw;
+  overflow: hidden;
+}
+html body header .news-box .news {
+  width: 68vw;
+  height: 5vw;
+  background: #fff;
+  border-radius: 50px;
+  margin: 6px 0 0px 22px;
+  position: absolute;
+  -webkit-box-shadow: 0px 2px 4px #00000075;
+          box-shadow: 0px 2px 4px #00000075;
+}
+html body header .news-box .news .news-icon {
+  width: 5vw;
+  height: 5vw;
+  background: url(../img/news-icon.png) no-repeat;
+  background-size: 100%;
+  position: absolute;
+  margin: 2px 0 0 5px;
+}
+html body header .news-box .news marquee {
+  width: 60vw;
+  font-size: 14px;
+  padding-top: 3px;
+  color: #311700;
+  margin-left: 30px;
+}
+html body header .news-box .pe-live {
+  width: 18vw;
+  height: 5vw;
+  background: -webkit-gradient(linear, left top, right top, from(#2ecfdd), to(#0c5986));
+  background: linear-gradient(to right, #2ecfdd 0%, #0c5986 100%);
+  border-radius: 5px;
+  border: 1px solid #35e0fa;
+  position: absolute;
+  margin-left: 77vw;
+  margin-top: 1vw;
+}
+html body header .news-box .pe-live .pe-live-icon {
+  width: 3vw;
+  height: 5vw;
+  background: url(../img/hot.png) no-repeat;
+  background-size: 100%;
+  position: absolute;
+  float: left;
+  margin: 2px 0 0 3px;
+}
+html body header .news-box .pe-live div {
+  font-size: 2vw;
+  color: #fff;
+  letter-spacing: 1px;
+  line-height: 5vw;
+  float: right;
+  margin-right: 2px;
+}
+html body header .user-box {
+  width: 100%;
+  height: 18vw;
+}
+html body header .user-box .left {
+  width: 30vw;
+  height: 15vw;
+  margin-left: 5vw;
+  position: absolute;
+  margin-top: 2.5vw;
+  float: left;
+}
+html body header .user-box .left .left-top {
+  width: 100%;
+  height: 6vw;
+}
+html body header .user-box .left .left-top .user {
+  color: #fffe30;
+  position: absolute;
+  letter-spacing: 1px;
+  font-size: 3.5vw;
+}
+html body header .user-box .left .left-top .vip0 {
+  width: 11.3vw;
+  height: 5vw;
+  background: url(../img/vip0.png) no-repeat;
+  background-size: 100%;
+  position: absolute;
+  margin: 0px 0 0 73px;
+}
+html body header .user-box .left .left-bottom {
+  width: 100%;
+  height: 9vw;
+}
+html body header .user-box .left .left-bottom span {
+  font-size: 5vw;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #fff;
+  line-height: 7vw;
+}
+html body header .user-box .left .left-bottom div {
+  width: 3.5vw;
+  height: 3.5vw;
+  font-size: 2vw;
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid #fffe30;
+  color: #fffe30;
+  margin: -23px 0 0 100px;
+  text-align: center;
+}
+html body header .user-box .right {
+  width: 47vw;
+  height: 18vw;
+  float: right;
+  margin-right: 5vw;
+}
+html body header .user-box .right ul {
+  width: 100%;
+  height: 18vw;
+}
+html body header .user-box .right ul li {
+  width: 10vw;
+  height: 14vw;
+  display: inline-block;
+  margin-top: 2vw;
+}
+html body header .user-box .right ul li .img {
+  width: 7vw;
+  height: 9vw;
+  background: url(../img/user-icon.png) no-repeat;
+}
+html body header .user-box .right ul li .out {
+  background-position-x: calc(100% + 53px);
+}
+html body header .user-box .right ul li .sale {
+  background-position-x: calc(100% + 26px);
+}
+html body header .user-box .right ul li .score {
+  margin-left: 2vw;
+  background-position-x: calc(100% - 2px);
+}
+html body header .user-box .right ul li .text {
+  position: absolute;
+  font-size: 3.5vw;
+  color: #fef4d7;
+  font-weight: bold;
+}
+html body main {
+  width: 100%;
+  height: 150vw;
+  overflow: scroll;
+}
+html body main .main-left {
+  width: 16vw;
+  height: 100vw;
+  float: left;
+  margin-left: 5vw;
+}
+html body main .main-left .main-left-shadwo {
+  width: 12.5vw;
+  height: 22vw;
+  border-radius: 10px 10px 8px 8px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(1%, #fcf4db), color-stop(43%, #fff1c9), color-stop(75%, #ddcb9f), to(#fff8e0));
+  background: linear-gradient(to right, #fcf4db 1%, #fff1c9 43%, #ddcb9f 75%, #fff8e0 100%);
+}
+html body main .main-left .main-left-shadwo .main-left-btn-1 {
+  width: 12vw;
+  height: 21vw;
+  background: #301a00;
+  border-radius: 10px;
+  border: 1px solid #fff2ca;
+  margin-top: 1.8vw;
+}
+html body main .main-left .main-left-shadwo .main-left-btn-1 .text {
+  width: 8vw;
+  height: 10vw;
+  color: #fff7de;
+  margin: auto;
+  margin-top: 6vw;
+  font-size: 3.4vw;
+  letter-spacing: 1px;
+  padding-top: 1px;
+  text-align: center;
+}
+html body main .main-left .main-left-shadwo .main-left-btn-1 .text div {
+  padding-top: 3px;
+}
+html body main .main-left .main-left-btn {
+  width: 12vw;
+  height: 20.5vw;
+  background: -webkit-gradient(linear, left top, right top, from(#fff7dd), color-stop(69%, #fff4ca), to(#ddcb9f));
+  background: linear-gradient(to right, #fff7dd 0%, #fff4ca 69%, #ddcb9f 100%);
+  border-radius: 10px;
+  border: 1px solid #fdf4d9;
+  margin-top: 1.8vw;
+  -webkit-box-shadow: 0px 2px 3px #1913087a;
+          box-shadow: 0px 2px 3px #1913087a;
+}
+html body main .main-right {
+  width: 70vw;
+  height: 180vw;
+  background: cornsilk;
+  float: right;
+  margin-right: 5vw;
+}
+html body .bg {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/bg.png);
+  background-size: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -999;
 }

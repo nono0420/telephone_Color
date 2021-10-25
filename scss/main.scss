@@ -1,5 +1,344 @@
-.box {
-    width: 500px;
-    height: 500px;
-    background-color: aqua;
+html body {
+    width: 100%;
+    height: 100%;
+    font-family: 微軟正黑體;
+    position: relative;
+    overflow: hidden;
+
+    header {
+        width: 100%;
+        height: 79vw;
+        
+        .top {
+            width: 100%;
+            height: 10vw;
+            background: #281600;
+            position: relative;
+            border-radius: 0 0 20px 20px;
+            box-shadow: 2px 2px 4px #00000078;
+
+            .hamburger {
+                width: 5vw;
+                height: 7vw;
+                background: url(../img/hamburger.png)no-repeat;
+                background-size: 100%;
+                position: absolute;
+                margin: 2.5vw 0 0 4vw;
+            }
+
+            .logo{
+                width: 16vw;
+                height: 4vw;
+                background: url(../img/logo.png)no-repeat;
+                background-size: 100%;
+                position: absolute;
+                padding-top: 10px;
+                margin: 3vw 0 0 41vw;
+            }
+
+            .message {
+                width: 5vw;
+                height: 8vw;
+                background: url(../img/message.png) no-repeat;
+                background-size: 100%;
+                position: absolute;
+                margin: 2.5vw 0 0 90vw;
+            }
+        }   
+        
+        .banner {
+            width: 90%;
+            height: 40vw;
+            margin: auto;
+            margin-top: 2.5vw;
+            padding: 0;
+            position: relative;
+
+            .swiper {
+                width: 100%;
+                height: 42vw;
+            }
+
+              .swiper-slide {
+                text-align: center;
+                font-size: 18px;
+                background: #fff;
+                height: 100%;
+        
+                /* Center slide text vertically */
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                -webkit-justify-content: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                -webkit-align-items: center;
+                align-items: center;
+              }
+
+            .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+                bottom: 16px;
+            }
+
+            .swiper-pagination-bullet {
+                background: #af650e;
+                outline: none;
+            }
+
+            .swiper-slide {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            background: url(../img/banner.png)no-repeat;
+            background-size: 100%;
+            }
+        }
+
+        .news-box {
+            width: 100%;
+            height: 8vw;
+            overflow: hidden;
+            // background: olivedrab;
+
+            .news {
+                width: 68vw;
+                height: 5vw;
+                background: #fff;
+                border-radius: 50px;
+                margin: 6px 0 0px 22px;
+                position: absolute;
+                box-shadow: 0px 2px 4px #00000075;
+
+                .news-icon {
+                    width: 5vw;
+                    height: 5vw;
+                    background: url(../img/news-icon.png) no-repeat;
+                    background-size: 100%;
+                    position: absolute;
+                    margin: 2px 0 0 5px;
+                }
+
+                marquee {
+                    width: 60vw;
+                    font-size: 14px;
+                    padding-top: 3px;
+                    color: #311700;
+                    margin-left: 30px;
+                }
+            }
+
+            .pe-live {
+                width: 18vw;
+                height: 5vw;
+                background: linear-gradient(to right,#2ecfdd 0%,#0c5986 100%);
+                border-radius: 5px;
+                border: 1px solid #35e0fa;
+                position: absolute;
+                margin-left: 77vw;
+                margin-top: 1vw;
+
+                .pe-live-icon {
+                    width: 3vw;
+                    height: 5vw;
+                    background: url(../img/hot.png) no-repeat;
+                    background-size: 100%;
+                    position: absolute;
+                    float: left;
+                    margin: 2px 0 0 3px;
+                }
+
+                div {
+                    font-size: 2vw;
+                    color: #fff;
+                    letter-spacing: 1px;
+                    line-height: 5vw;
+                    float: right;
+                    margin-right: 2px;
+                }
+            }
+        }
+
+        .user-box {
+            width: 100%;
+            height: 18vw;
+
+            .left {
+                width: 30vw;
+                height: 15vw;
+                margin-left: 5vw;
+                position: absolute;
+                margin-top: 2.5vw;
+                float: left;
+
+                .left-top {
+                    width: 100%;
+                    height: 6vw;
+
+                    .user {
+                        color: #fffe30;
+                        position: absolute;
+                        letter-spacing: 1px;
+                        font-size: 3.5vw;
+                    }
+
+                    .vip0 {
+                        width: 11.3vw;
+                        height: 5vw;
+                        background: url(../img/vip0.png) no-repeat;
+                        background-size: 100%;
+                        position: absolute;
+                        margin: 0px 0 0 73px;
+                    }
+                }
+
+                .left-bottom {
+                    width: 100%;
+                    height: 9vw;
+
+                    span {
+                        font-size: 5vw;
+                        font-weight: bold;
+                        letter-spacing: 1px;
+                        color: #fff;
+                        line-height: 7vw;
+                    }
+
+                    div {
+                        width: 3.5vw;
+                        height: 3.5vw;
+                        font-size: 2vw;
+                        position: absolute;
+                        border-radius: 50%;
+                        border: 2px solid #fffe30;
+                        color: #fffe30;
+                        margin: -23px 0 0 100px;
+                        text-align: center;
+                    }
+                }
+            }
+
+            .right {
+                width: 47vw;
+                height: 18vw;
+                float: right;
+                margin-right: 5vw;
+                
+                ul {
+                    width: 100%;
+                    height: 18vw;
+
+                    li {
+                        width: 10vw;
+                        height: 14vw;
+                        display: inline-block;
+                        margin-top: 2vw;
+
+                        .img {
+                            width: 7vw;
+                            height: 9vw;
+                            background: url(../img/user-icon.png) no-repeat;
+                        }
+
+                        .out {
+                            background-position-x: calc(100% + 53px);
+                        }
+                        .sale {
+                            background-position-x: calc(100% + 26px);
+                        }
+                        .score {
+                            margin-left: 2vw;
+                            background-position-x: calc(100% - 2px);
+                        }
+
+                        .text {
+                            position: absolute;
+                            font-size: 3.5vw;
+                            color: #fef4d7;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    main {
+        width: 100%;
+        height: 150vw;
+        overflow: scroll;
+       
+        
+        .main-left {
+            width: 16vw;
+            height: 100vw;
+            float: left;
+            margin-left: 5vw;
+
+            .main-left-shadwo {
+                width: 12.5vw;
+                height: 22vw;
+                border-radius: 10px 10px 8px 8px;
+                background: linear-gradient(to right, #fcf4db 1%,#fff1c9 43%,#ddcb9f 75%,#fff8e0 100%);
+
+                .main-left-btn-1 {
+                    width: 12vw;
+                    height: 21vw;
+                    background: #301a00;
+                    border-radius: 10px;
+                    border: 1px solid #fff2ca;
+                    margin-top: 1.8vw;
+    
+                    .text {
+                        width: 8vw;
+                        height: 10vw;
+                        color: #fff7de;
+                        margin: auto;
+                        margin-top: 6vw;
+                        font-size: 3.4vw;
+                        letter-spacing: 1px;
+                        padding-top: 1px;
+                        text-align: center;
+
+                        div {
+                            padding-top: 3px;
+                        }
+                    }
+                }
+            }
+
+            .main-left-btn {
+                width: 12vw;
+                height: 20.5vw;
+                background: linear-gradient(to right, #fff7dd 0%,#fff4ca 69%,#ddcb9f 100%);
+                border-radius: 10px;
+                border: 1px solid #fdf4d9;
+                margin-top: 1.8vw;
+                box-shadow: 0px 2px 3px #1913087a;
+            }
+        }
+
+        .main-right {
+            width: 70vw;
+            height: 180vw;
+            background: cornsilk;
+            float: right;
+            margin-right: 5vw;
+        }
+    }
+
+    .bg {
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/bg.png);
+        background-size: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -999;
+    }
 }
