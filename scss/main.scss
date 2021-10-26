@@ -378,18 +378,19 @@ html body {
                 .left {
                     width: 26vw;
                     height: 24vw;
-                    background: skyblue;
                     float: left;
                     margin-left: 3vw;
 
                     .circle {
                         position: relative;
                         z-index: 1;
-                        width: 78px;
-                        height: 78px;
+                        width: 76px;
+                        height: 76px;
                         text-align: center;
                         padding: 10px;
                         box-sizing: border-box;
+                        margin: auto;
+                        margin-top: 3.5vw;
                     }
 
                     ::after {
@@ -401,10 +402,10 @@ html body {
                         width: 100%;
                         height: 100%;
                         border-radius: 50%;
-                        background: linear-gradient(to bottom right, #e0a930 0%,#672e00 60%, #281600 100%);
+                        background: linear-gradient(to bottom right,#e1d2ae 40%, #281600 30%,#672e00 60%,#e0a930  100%);
                         /* 径向渐变中的 30px 计算方法为 (宽度 / 2 - 边框大小)，此处为 80px / 2 - 10px */
-                        mask-image: radial-gradient(transparent 0 30px, #000 30px);
-                        -webkit-mask-image: radial-gradient(transparent 0 30px, #000 32px);
+                        mask-image: radial-gradient(transparent 0 29px, #000 31px);
+                        -webkit-mask-image: radial-gradient(transparent 0 29px, #000 31px);
                     }
                 }
 

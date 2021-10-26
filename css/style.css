@@ -390,19 +390,20 @@ html body main .main-right .right-box .triangle-2 {
 html body main .main-right .right-box .left {
   width: 26vw;
   height: 24vw;
-  background: skyblue;
   float: left;
   margin-left: 3vw;
 }
 html body main .main-right .right-box .left .circle {
   position: relative;
   z-index: 1;
-  width: 78px;
-  height: 78px;
+  width: 76px;
+  height: 76px;
   text-align: center;
   padding: 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin: auto;
+  margin-top: 3.5vw;
 }
 html body main .main-right .right-box .left ::after {
   content: "";
@@ -413,11 +414,11 @@ html body main .main-right .right-box .left ::after {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: -webkit-gradient(linear, left top, right bottom, from(#e0a930), color-stop(60%, #672e00), to(#281600));
-  background: linear-gradient(to bottom right, #e0a930 0%, #672e00 60%, #281600 100%);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(40%, #e1d2ae), color-stop(30%, #281600), color-stop(60%, #672e00), to(#e0a930));
+  background: linear-gradient(to bottom right, #e1d2ae 40%, #281600 30%, #672e00 60%, #e0a930 100%);
   /* 径向渐变中的 30px 计算方法为 (宽度 / 2 - 边框大小)，此处为 80px / 2 - 10px */
-  mask-image: radial-gradient(transparent 0 30px, #000 30px);
-  -webkit-mask-image: radial-gradient(transparent 0 30px, #000 32px);
+  mask-image: radial-gradient(transparent 0 29px, #000 31px);
+  -webkit-mask-image: radial-gradient(transparent 0 29px, #000 31px);
 }
 html body main .main-right .right-box .right {
   width: 40vw;
