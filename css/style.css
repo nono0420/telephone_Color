@@ -168,6 +168,14 @@ html body header .news-box .news marquee {
   color: #311700;
   margin-left: 30px;
 }
+@media screen and (max-width: 320px) {
+  html body header .news-box .news marquee {
+    font-size: 12px;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    padding-top: 2px;
+  }
+}
 html body header .news-box .pe-live {
   width: 18vw;
   height: 5vw;
@@ -190,11 +198,18 @@ html body header .news-box .pe-live .pe-live-icon {
 }
 html body header .news-box .pe-live div {
   font-size: 2vw;
+  -webkit-transform: scale(0.89);
+          transform: scale(0.89);
   color: #fff;
   letter-spacing: 1px;
   line-height: 5vw;
   float: right;
   margin-right: 2px;
+}
+@media screen and (max-width: 320px) {
+  html body header .news-box .pe-live .pe-live-icon {
+    display: none;
+  }
 }
 html body header .user-box {
   width: 100%;
@@ -245,8 +260,15 @@ html body header .user-box .left .left-bottom div {
   border-radius: 50%;
   border: 2px solid #fffe30;
   color: #fffe30;
-  margin: -23px 0 0 100px;
+  margin: -5.5vw 0 0 25vw;
   text-align: center;
+}
+@media screen and (max-width: 320px) {
+  html body header .user-box .left .left-bottom div {
+    width: 4vw;
+    height: 4vw;
+    border: 1px solid #fffe30;
+  }
 }
 html body header .user-box .right {
   width: 47vw;
@@ -285,6 +307,17 @@ html body header .user-box .right ul li .text {
   color: #fef4d7;
   font-weight: bold;
 }
+@media screen and (max-width: 320px) {
+  html body header .user-box .right ul li .img {
+    width: 9vw;
+    height: 9vw;
+  }
+  html body header .user-box .right ul li .text {
+    font-size: 2vw;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+}
 html body main {
   width: 100%;
   height: 150vw;
@@ -312,7 +345,7 @@ html body main .main-left .main-left-shadwo .main-left-btn-1 {
   margin-top: 1.8vw;
 }
 html body main .main-left .main-left-shadwo .main-left-btn-1 .text {
-  width: 8vw;
+  width: 9vw;
   height: 10vw;
   color: #fff7de;
   margin: auto;
@@ -385,25 +418,39 @@ html body main .main-right .right-box .triangle-2 {
   background: url(../img/triangle-2.png) no-repeat;
   background-size: 100%;
   position: absolute;
-  margin: 60px 0 0 251px;
+  margin: 14.5vw 0 0 60.5vw;
 }
 html body main .main-right .right-box .left {
   width: 26vw;
   height: 24vw;
   float: left;
-  margin-left: 3vw;
+  margin-left: 1vw;
 }
 html body main .main-right .right-box .left .circle {
   position: relative;
   z-index: 1;
-  width: 76px;
-  height: 76px;
+  width: 73px;
+  height: 74px;
   text-align: center;
   padding: 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: auto;
   margin-top: 3.5vw;
+}
+html body main .main-right .right-box .left .circle div {
+  margin-top: 2vw;
+  font-size: 1vw;
+  -webkit-transform: scale(0.9, 0.9);
+          transform: scale(0.9, 0.9);
+  font-weight: bold;
+  color: #0a0a0a;
+}
+html body main .main-right .right-box .left .circle .number {
+  margin-top: 1vw;
+  font-size: 4.5vw;
+  color: #291700;
+  font-weight: bold;
 }
 html body main .main-right .right-box .left ::after {
   content: "";
@@ -420,17 +467,86 @@ html body main .main-right .right-box .left ::after {
   mask-image: radial-gradient(transparent 0 29px, #000 31px);
   -webkit-mask-image: radial-gradient(transparent 0 29px, #000 31px);
 }
+@media screen and (max-width: 320px) {
+  html body main .main-right .right-box .left .circle {
+    width: 70px;
+    height: 66px;
+    margin-top: 2.2vw;
+  }
+  html body main .main-right .right-box .left .circle div {
+    -webkit-transform: scale(0.88);
+            transform: scale(0.88);
+  }
+  html body main .main-right .right-box .left .circle .number {
+    font-size: 4.8vw;
+  }
+}
 html body main .main-right .right-box .right {
-  width: 40vw;
+  width: 43vw;
   height: 24vw;
-  background: orange;
   float: right;
+}
+html body main .main-right .right-box .right .date {
+  font-size: 2vw;
+  -webkit-transform: scale(0.83, 0.83);
+          transform: scale(0.83, 0.83);
+  position: absolute;
+  margin-left: -3vw;
+  margin-top: 1vw;
+  color: #8b443a;
+}
+html body main .main-right .right-box .right .no {
+  font-size: 2vw;
+  -webkit-transform: scale(0.83, 0.83);
+          transform: scale(0.83, 0.83);
+  position: absolute;
+  color: #643612;
+  margin-left: 28vw;
+  margin-top: 1vw;
+}
+html body main .main-right .right-box .right .main-textBox {
+  width: 41vw;
+  height: 6vw;
+  margin: 10vw 0 0 -1vw;
+  display: -webkit-inline-box;
+}
+html body main .main-right .right-box .right .main-textBox div {
+  color: #1d1000;
+  font-size: 4.2vw;
+  font-weight: bolder;
+}
+html body main .main-right .right-box .right .main-textBox .import {
+  color: #7f5b00;
+  font-size: 3.8vw;
+}
+html body main .main-right .right-box .right .main-textBox .vs {
+  color: #034aaa;
+  font-size: 3.5vw;
+  line-height: 4vw;
+}
+html body main .main-right .right-box .right .team {
+  width: 11.3vw;
+  height: 5vw;
+  margin: 2vw 0 0 77px;
+  position: absolute;
+  color: #f05a00;
+  font-size: 3.6vw;
+  font-weight: bold;
+}
+@media screen and (max-width: 320px) {
+  html body main .main-right .right-box .right .date {
+    margin-left: -5vw;
+  }
+  html body main .main-right .right-box .right .no {
+    margin-left: 25vw;
+  }
 }
 html body footer {
   width: 100%;
   height: 19vw;
   position: fixed;
   bottom: 0;
+  z-index: 99;
 }
 html body footer .footer-bar {
   width: 100%;
@@ -439,7 +555,7 @@ html body footer .footer-bar {
   background-size: 100%;
 }
 html body footer .footer-bar .close {
-  width: 10vw;
+  width: 10.3vw;
   height: 5vw;
   margin-top: 3.2vw;
   margin-right: 5vw;
@@ -456,6 +572,13 @@ html body footer .footer-bar .close .close-img {
   background: url(../img/arrow.png) no-repeat;
   background-size: 100%;
   float: left;
+}
+@media screen and (max-width: 320px) {
+  html body footer .footer-bar .close .close-text {
+    -webkit-transform: scale(0.83);
+            transform: scale(0.83);
+    font-size: 2vw;
+  }
 }
 html body footer .footer-bar ul {
   width: 91vw;
@@ -511,6 +634,8 @@ html body .bg {
   width: 100%;
   height: 100%;
   background-image: url(../img/bg.png);
+  background-repeat: no-repeat;
+  background-color: #9c6239;
   background-size: 100%;
   position: absolute;
   top: 0;

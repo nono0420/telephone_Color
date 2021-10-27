@@ -130,6 +130,14 @@ html body {
                     color: #311700;
                     margin-left: 30px;
                 }
+
+                @media screen and (max-width: 320px) {
+                    marquee {
+                       font-size: 12px;
+                       transform: scale(0.9);
+                       padding-top: 2px;
+                    }
+                }
             }
 
             .pe-live {
@@ -154,11 +162,18 @@ html body {
 
                 div {
                     font-size: 2vw;
+                    transform: scale(0.89);
                     color: #fff;
                     letter-spacing: 1px;
                     line-height: 5vw;
                     float: right;
                     margin-right: 2px;
+                }
+
+                @media screen and (max-width: 320px) {
+                    .pe-live-icon {
+                        display: none;
+                    }
                 }
             }
         }
@@ -216,8 +231,16 @@ html body {
                         border-radius: 50%;
                         border: 2px solid #fffe30;
                         color: #fffe30;
-                        margin: -23px 0 0 100px;
+                        margin: -5.5vw 0 0 25vw;
                         text-align: center;
+                    }
+
+                    @media screen and (max-width: 320px) {
+                       div {
+                        width: 4vw;
+                        height: 4vw;
+                        border: 1px solid #fffe30;
+                       }
                     }
                 }
             }
@@ -261,6 +284,18 @@ html body {
                             color: #fef4d7;
                             font-weight: bold;
                         }
+
+                        @media screen and (max-width: 320px) {
+                            .img {
+                             width: 9vw;
+                             height: 9vw;
+                            }
+
+                            .text {
+                                font-size: 2vw;
+                                transform: scale(0.9);
+                            }
+                         }
                     }
                 }
             }
@@ -294,7 +329,7 @@ html body {
                     margin-top: 1.8vw;
     
                     .text {
-                        width: 8vw;
+                        width: 9vw;
                         height: 10vw;
                         color: #fff7de;
                         margin: auto;
@@ -372,25 +407,40 @@ html body {
                     background: url(../img/triangle-2.png) no-repeat;
                     background-size: 100%;
                     position: absolute;
-                    margin: 60px 0 0 251px;
+                    margin: 14.5vw 0 0 60.5vw;
                 }
 
                 .left {
                     width: 26vw;
                     height: 24vw;
                     float: left;
-                    margin-left: 3vw;
+                    margin-left: 1vw;
 
                     .circle {
                         position: relative;
                         z-index: 1;
-                        width: 76px;
-                        height: 76px;
+                        width: 73px;
+                        height: 74px;
                         text-align: center;
                         padding: 10px;
                         box-sizing: border-box;
                         margin: auto;
                         margin-top: 3.5vw;
+
+                        div {
+                            margin-top: 2vw;
+                            font-size: 1vw;
+                            transform: scale(0.9,0.9);
+                            font-weight: bold;
+                            color: #0a0a0a;
+                        }
+
+                        .number {
+                            margin-top: 1vw;
+                            font-size: 4.5vw;
+                            color: #291700;
+                            font-weight: bold;
+                        }
                     }
 
                     ::after {
@@ -407,13 +457,91 @@ html body {
                         mask-image: radial-gradient(transparent 0 29px, #000 31px);
                         -webkit-mask-image: radial-gradient(transparent 0 29px, #000 31px);
                     }
+
+                    @media screen and (max-width: 320px) {
+                        .circle {
+                            width: 70px;
+                            height: 66px;
+                            margin-top: 2.2vw;
+
+                            div {
+                                transform: scale(0.88);
+                            }
+
+                            .number {
+                                font-size: 4.8vw;
+                             }
+                        }
+                     }
                 }
 
                 .right {
-                    width: 40vw;
+                    width: 43vw;
                     height: 24vw;
-                    background: orange;
                     float: right;
+
+                    .date {
+                        font-size: 2vw;
+                        transform: scale(0.83,0.83);
+                        position: absolute;
+                        margin-left: -3vw;
+                        margin-top: 1vw;
+                        color: #8b443a;
+                    }
+
+                    .no {
+                        font-size: 2vw;
+                        transform: scale(0.83,0.83);
+                        position: absolute;
+                        color: #643612;
+                        margin-left: 28vw;
+                        margin-top: 1vw;
+                    }
+
+                    .main-textBox {
+                        width: 41vw;
+                        height: 6vw;
+                        margin: 10vw 0 0 -1vw;
+                        display: -webkit-inline-box;
+
+                        div {
+                            color: #1d1000;
+                            font-size: 4.2vw;
+                            font-weight: bolder;
+                        }
+
+                        .import {
+                            color: #7f5b00;
+                            font-size: 3.8vw;
+                        }
+
+                        .vs {
+                            color: #034aaa;
+                            font-size: 3.5vw;
+                            line-height: 4vw;
+                        }
+                    }
+
+                    .team {
+                        width: 11.3vw;
+                        height: 5vw;
+                        margin: 2vw 0 0 77px;
+                        position: absolute;
+                        color: #f05a00;
+                        font-size: 3.6vw;
+                        font-weight: bold;
+
+                    }
+
+                    @media screen and (max-width: 320px) {
+                        .date {
+                            margin-left: -5vw;
+                        }
+
+                        .no {
+                            margin-left: 25vw;
+                        }
+                     }
                 }
             }
         }
@@ -424,6 +552,7 @@ html body {
         height: 19vw;
         position: fixed;
         bottom: 0;
+        z-index: 99;
 
         .footer-bar {
             width: 100%;
@@ -432,7 +561,7 @@ html body {
             background-size: 100%;
 
             .close {
-                width: 10vw;
+                width: 10.3vw;
                 height: 5vw;
                
                 margin-top: 3.2vw;
@@ -452,6 +581,13 @@ html body {
                     background-size: 100%;
                     float: left;
                 }
+
+                @media screen and (max-width: 320px) {
+                    .close-text {
+                        transform: scale(0.83);
+                        font-size: 2vw;
+                    }
+                 }
 
             }
 
@@ -521,6 +657,8 @@ html body {
         width: 100%;
         height: 100%;
         background-image: url(../img/bg.png);
+        background-repeat: no-repeat;
+        background-color: #9c6239;
         background-size: 100%;
         position: absolute;
         top: 0;
