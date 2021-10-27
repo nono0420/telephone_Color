@@ -287,19 +287,19 @@ html body header .user-box .right ul li {
   margin-top: 2vw;
 }
 html body header .user-box .right ul li .img {
-  width: 7vw;
+  width: 7.2vw;
   height: 9vw;
   background: url(../img/user-icon.png) no-repeat;
 }
 html body header .user-box .right ul li .out {
-  background-position-x: calc(100% + 53px);
+  background-position-x: calc(100% + 54px);
 }
 html body header .user-box .right ul li .sale {
   background-position-x: calc(100% + 26px);
 }
 html body header .user-box .right ul li .score {
   margin-left: 2vw;
-  background-position-x: calc(100% - 2px);
+  background-position-x: calc(100% - 1px);
 }
 html body header .user-box .right ul li .text {
   position: absolute;
@@ -307,9 +307,27 @@ html body header .user-box .right ul li .text {
   color: #fef4d7;
   font-weight: bold;
 }
+@media screen and (max-width: 414px) {
+  html body header .user-box .right ul li .img {
+    width: 6.5vw;
+    height: 7vw;
+  }
+}
+@media screen and (max-width: 375px) {
+  html body header .user-box .right ul li .img {
+    width: 7.5vw;
+    height: 8vw;
+  }
+}
+@media screen and (max-width: 360px) {
+  html body header .user-box .right ul li .img {
+    width: 7.5vw;
+    height: 9vw;
+  }
+}
 @media screen and (max-width: 320px) {
   html body header .user-box .right ul li .img {
-    width: 9vw;
+    width: 8.9vw;
     height: 9vw;
   }
   html body header .user-box .right ul li .text {
@@ -360,7 +378,7 @@ html body main .main-left .main-left-shadwo .main-left-btn-1 .text div {
 }
 html body main .main-left .main-left-btn {
   width: 12vw;
-  height: 20.5vw;
+  height: 21vw;
   background: -webkit-gradient(linear, left top, right top, from(#fff7dd), color-stop(69%, #fff4ca), to(#ddcb9f));
   background: linear-gradient(to right, #fff7dd 0%, #fff4ca 69%, #ddcb9f 100%);
   border-radius: 10px;
@@ -396,8 +414,8 @@ html body main .main-right {
 html body main .main-right .right-box {
   width: 100%;
   height: 24vw;
-  background: -webkit-gradient(linear, left top, right top, from(#fffbee), color-stop(20%, #fffae4), to(#f2deae));
-  background: linear-gradient(to right, #fffbee 0%, #fffae4 20%, #f2deae 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#fffbee), color-stop(55%, #fffae4), to(#f2deae));
+  background: linear-gradient(to right, #fffbee 0%, #fffae4 55%, #f2deae 100%);
   border-radius: 10px;
   margin-bottom: 2.6vw;
   -webkit-box-shadow: 1px 2px 3px #1913088a;
@@ -541,12 +559,30 @@ html body main .main-right .right-box .right .team {
     margin-left: 25vw;
   }
 }
+html body ::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+html body ::-webkit-scrollbar-track {
+  border-radius: 3px;
+  background: #7f5b00;
+}
+html body ::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background: #e3b476;
+}
 html body footer {
   width: 100%;
   height: 19vw;
   position: fixed;
   bottom: 0;
   z-index: 99;
+}
+html body footer .close-close {
+  width: 12vw;
+  height: 5vw;
+  position: absolute;
+  margin: 2vw 0 0 84vw;
 }
 html body footer .footer-bar {
   width: 100%;
@@ -566,12 +602,28 @@ html body footer .footer-bar .close .close-text {
   float: right;
   font-size: 2vw;
 }
+html body footer .footer-bar .close .close-text.active {
+  display: none;
+}
+html body footer .footer-bar .close .close-text-2 {
+  color: #fffd3f;
+  float: right;
+  font-size: 2vw;
+  display: none;
+}
+html body footer .footer-bar .close .close-text-2.active {
+  display: block;
+}
 html body footer .footer-bar .close .close-img {
   width: 2.8vw;
   height: 3vw;
   background: url(../img/arrow.png) no-repeat;
   background-size: 100%;
   float: left;
+}
+html body footer .footer-bar .close .close-img.scale {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 @media screen and (max-width: 320px) {
   html body footer .footer-bar .close .close-text {
@@ -630,12 +682,26 @@ html body footer .footer-bar ul li .footer-text {
   color: #ffe2a6;
   text-align: center;
 }
+@media screen and (max-width: 360px) {
+  html body footer .footer-bar ul li .footer-text {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    font-size: 2vw;
+  }
+  html body footer .footer-bar ul li .footer-icon {
+    width: 51%;
+    height: 62%;
+  }
+}
+html body footer .footer-bar.display {
+  margin-top: 11.5vw;
+}
 html body .bg {
   width: 100%;
   height: 100%;
   background-image: url(../img/bg.png);
   background-repeat: no-repeat;
-  background-color: #9c6239;
+  background-color: #7c4627;
   background-size: 100%;
   position: absolute;
   top: 0;

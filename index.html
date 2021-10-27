@@ -78,7 +78,7 @@
     <main>
         <div class="main-left">
             <div class="main-left-shadwo">
-                <div class="main-left-btn-1 ">
+                <div class="main-left-btn-1">
                     <div class="text">
                         市場
                         <div>列表</div>
@@ -194,8 +194,11 @@
     
     <footer>
         <div class="footer-bar">
+             <!-- 觸發 -->
+            <div class="close-close"></div>
             <div class="close">
                 <div class="close-text">收起</div>
+                <div class="close-text-2">展開</div>
                 <div class="close-img"></div>
             </div>
             <ul>
@@ -243,5 +246,22 @@
       },
     });
   </script>
+
+<script>
+    $(function(){
+       $('.close-close').click(function(){
+           $('.footer-bar').toggleClass('display');
+           $('.close-img').toggleClass('scale');
+           $('.close-text').toggleClass('active');
+           $('.close-text-2').toggleClass('active');
+       })
+   })
+
+   $(function(){
+       $('.close-text-2').click(function(){
+           $('.close-text-2').addClass('active');
+       })
+   })
+</script>
 </body>
 </html>
