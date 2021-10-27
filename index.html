@@ -15,9 +15,19 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
+   
     <header>
         <div class="top">
-            <div class="hamburger"></div>
+            <div class="hamburger">
+                <div class="menu">
+                    <div class="menu-close">✖</div>
+                    <div class="menu-colorBox">
+                        <div class="color1"></div>
+                        <div class="color1"></div>
+                        <div class="color1"></div>
+                    </div>
+                </div>
+            </div>
             <div class="logo"></div>
             <div class="message"></div>
         </div>
@@ -258,8 +268,11 @@
    })
 
    $(function(){
-       $('.close-text-2').click(function(){
-           $('.close-text-2').addClass('active');
+        $('.hamburger').click(function(){
+            $('.menu').addClass('close');
+        })
+       $('.menu-close').click(function(){
+           $('.menu').removeClass('close');
        })
    })
 </script>
