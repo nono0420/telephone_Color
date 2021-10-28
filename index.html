@@ -22,9 +22,14 @@
                 <div class="menu">
                     <div class="menu-close">✖</div>
                     <div class="menu-colorBox">
-                        <div class="color1"></div>
-                        <div class="color1"></div>
-                        <div class="color1"></div>
+                        <div class="color color1"></div>
+                        <div class="color color2"></div>
+                        <div class="color color3"></div>
+                        <div class="color color4"></div>
+                        <div class="color color5"></div>
+                        <div class="color color6"></div>
+                        <div class="color color7"></div>
+                        <div class="color color8"></div>
                     </div>
                 </div>
             </div>
@@ -271,9 +276,12 @@
         $('.hamburger').click(function(){
             $('.menu').addClass('close');
         })
-       $('.menu-close').click(function(){
-           $('.menu').removeClass('close');
-       })
+   })
+
+   $(function(){
+        $('.menu-close').click(function(){
+            $('.menu').removeClass('close');
+        })
    })
 </script>
 </body>

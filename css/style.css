@@ -104,9 +104,38 @@ html body header .top .hamburger .menu .menu-close {
 html body header .top .hamburger .menu .menu-colorBox {
   width: 15vw;
   height: 134vw;
-  background: #f2deae;
   margin: 15vw 0px 0px 4vw;
   position: absolute;
+}
+html body header .top .hamburger .menu .menu-colorBox .color {
+  width: 9vw;
+  height: 9vw;
+  border-radius: 50%;
+  margin: 3vw auto;
+}
+html body header .top .hamburger .menu .menu-colorBox .color1 {
+  background: #dca246;
+}
+html body header .top .hamburger .menu .menu-colorBox .color2 {
+  background: #f05a00;
+}
+html body header .top .hamburger .menu .menu-colorBox .color3 {
+  background: #2ecfdd;
+}
+html body header .top .hamburger .menu .menu-colorBox .color4 {
+  background: red;
+}
+html body header .top .hamburger .menu .menu-colorBox .color5 {
+  background: greenyellow;
+}
+html body header .top .hamburger .menu .menu-colorBox .color6 {
+  background: blue;
+}
+html body header .top .hamburger .menu .menu-colorBox .color7 {
+  background: wheat;
+}
+html body header .top .hamburger .menu .menu-colorBox .color8 {
+  background: palevioletred;
 }
 html body header .top .logo {
   width: 16vw;
@@ -699,7 +728,7 @@ html body footer .footer-bar ul li:hover .footer-text, html body footer .footer-
 }
 html body footer .footer-bar ul li .footer-icon {
   width: 7vw;
-  height: 7.6vw;
+  height: 7.5vw;
   background: url(../img/footer-icon.png) no-repeat;
   margin: auto;
 }

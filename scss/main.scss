@@ -54,9 +54,47 @@ html body {
                     .menu-colorBox {
                         width: 15vw;
                         height: 134vw;
-                        background: #f2deae;
                         margin: 15vw 0px 0px 4vw;
                         position: absolute;
+
+                        .color {
+                            width: 9vw;
+                            height: 9vw;
+                            border-radius: 50%;
+                            margin: 3vw auto;
+                        }
+
+                        .color1 {
+                            background: #dca246;
+                        }
+
+                        .color2 {
+                            background: #f05a00;
+                        }
+
+                        .color3 {
+                            background: #2ecfdd;
+                        }
+
+                        .color4 {
+                            background: red;
+                        }
+
+                        .color5 {
+                            background: greenyellow;
+                        }
+
+                        .color6 {
+                            background: blue;
+                        }
+
+                        .color7 {
+                            background: wheat;
+                        }
+
+                        .color8 {
+                            background: palevioletred;
+                        }
                     }
                 }
             }
@@ -724,7 +762,7 @@ html body {
 
                     .footer-icon {
                         width: 7vw;
-                        height: 7.6vw;
+                        height: 7.5vw;
                         background: url(../img/footer-icon.png) no-repeat;
                         margin: auto;
                     }
