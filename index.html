@@ -271,18 +271,25 @@
            $('.close-text-2').toggleClass('active');
        })
    })
-
-   $(function(){
-        $('.hamburger').click(function(){
-            $('.menu').addClass('close');
-        })
-   })
-
-   $(function(){
-        $('.menu-close').click(function(){
-            $('.menu').removeClass('close');
-        })
-   })
 </script>
+
+<script>
+    $(function(){
+       $('.hamburger').click(function(){
+           $('.menu').addClass('display');
+       })
+
+       $('.menu-close').click(function(){
+           $('.menu').removeClass('display');
+       })
+   })
+
+//    $(function(){
+//        $('.menu-close').click(function(){
+//            $('.menu').removeClass('display');
+//        })
+//    })
+</script>
+
 </body>
 </html>

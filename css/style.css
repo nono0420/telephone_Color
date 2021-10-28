@@ -87,7 +87,7 @@ html body header .top .hamburger .menu {
   margin-top: -2.5vw;
   display: none;
 }
-html body header .top .hamburger .menu.close {
+html body header .top .hamburger .menu.display {
   display: block;
 }
 html body header .top .hamburger .menu .menu-close {
