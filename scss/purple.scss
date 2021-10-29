@@ -5,77 +5,6 @@ html body {
     position: relative;
     overflow: hidden;
 
-    .menu {
-        width: 23vw;
-        height: 178vw;
-        background: #000000db;
-        position: absolute;
-        z-index: 99;
-        display: none;
-
-        &.close {
-            display: block;
-        }
-
-        .menu-close {
-            width: 10vw;
-            height: 10vw;
-            background: #281600b5;
-            border: 1px solid #f2deae;
-            float: right;
-            text-align: center;
-            line-height: 10vw;
-            color: #f2deae;
-            font-size: 6vw;
-        }
-
-        .menu-colorBox {
-            width: 15vw;
-            height: 134vw;
-            margin: 15vw 0px 0px 4vw;
-            position: absolute;
-
-            .color {
-                width: 9vw;
-                height: 9vw;
-                border-radius: 50%;
-                margin: 3vw auto;
-            }
-
-            .color1 {
-                background: #dca246;
-            }
-
-            .color2 {
-                background: #f05a00;
-            }
-
-            .color3 {
-                background: #2ecfdd;
-            }
-
-            .color4 {
-                background: red;
-            }
-
-            .color5 {
-                background: greenyellow;
-            }
-
-            .color6 {
-                background: blue;
-            }
-
-            .color7 {
-                background: wheat;
-            }
-
-            .color8 {
-                background: palevioletred;
-            }
-        }
-    }
-
     header {
         width: 100%;
         height: 79vw;
@@ -95,6 +24,79 @@ html body {
                 background-size: 100%;
                 position: absolute;
                 margin: 2.5vw 0 0 4vw;
+
+                .menu {
+                    width: 24vw;
+                    height: 178vw;
+                    background: #000000db;
+                    position: relative;
+                    z-index: 99;
+                    margin-left: -4vw;
+                    margin-top: -2.5vw;
+                    display: none;
+
+                    &.display {
+                        display: block;
+                    }
+
+                    .menu-close {
+                        width: 10vw;
+                        height: 10vw;
+                        background: #281600b5;
+                        border: 1px solid #f2deae;
+                        float: right;
+                        text-align: center;
+                        line-height: 10vw;
+                        color: #f2deae;
+                        font-size: 6vw;
+                    }
+
+                    .menu-colorBox {
+                        width: 15vw;
+                        height: 134vw;
+                        margin: 15vw 0px 0px 4vw;
+                        position: absolute;
+
+                        .color {
+                            width: 9vw;
+                            height: 9vw;
+                            border-radius: 50%;
+                            margin: 3vw auto;
+                        }
+
+                        .color1 {
+                            background: #dca246;
+                        }
+
+                        .color2 {
+                            background: #f05a00;
+                        }
+
+                        .color3 {
+                            background: #2ecfdd;
+                        }
+
+                        .color4 {
+                            background: red;
+                        }
+
+                        .color5 {
+                            background: greenyellow;
+                        }
+
+                        .color6 {
+                            background: blue;
+                        }
+
+                        .color7 {
+                            background: wheat;
+                        }
+
+                        .color8 {
+                            background: palevioletred;
+                        }
+                    }
+                }
             }
 
             .logo{

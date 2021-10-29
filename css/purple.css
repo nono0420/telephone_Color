@@ -1,118 +1,10 @@
 @charset "UTF-8";
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
 html body {
   width: 100%;
   height: 100%;
   font-family: 微軟正黑體;
   position: relative;
   overflow: hidden;
-}
-html body .menu {
-  width: 23vw;
-  height: 178vw;
-  background: #000000db;
-  position: absolute;
-  z-index: 99;
-  display: none;
-}
-html body .menu.close {
-  display: block;
-}
-html body .menu .menu-close {
-  width: 10vw;
-  height: 10vw;
-  background: #281600b5;
-  border: 1px solid #f2deae;
-  float: right;
-  text-align: center;
-  line-height: 10vw;
-  color: #f2deae;
-  font-size: 6vw;
-}
-html body .menu .menu-colorBox {
-  width: 15vw;
-  height: 134vw;
-  margin: 15vw 0px 0px 4vw;
-  position: absolute;
-}
-html body .menu .menu-colorBox .color {
-  width: 9vw;
-  height: 9vw;
-  border-radius: 50%;
-  margin: 3vw auto;
-}
-html body .menu .menu-colorBox .color1 {
-  background: #dca246;
-}
-html body .menu .menu-colorBox .color2 {
-  background: #f05a00;
-}
-html body .menu .menu-colorBox .color3 {
-  background: #2ecfdd;
-}
-html body .menu .menu-colorBox .color4 {
-  background: red;
-}
-html body .menu .menu-colorBox .color5 {
-  background: greenyellow;
-}
-html body .menu .menu-colorBox .color6 {
-  background: blue;
-}
-html body .menu .menu-colorBox .color7 {
-  background: wheat;
-}
-html body .menu .menu-colorBox .color8 {
-  background: palevioletred;
 }
 html body header {
   width: 100%;
@@ -134,6 +26,66 @@ html body header .top .hamburger {
   background-size: 100%;
   position: absolute;
   margin: 2.5vw 0 0 4vw;
+}
+html body header .top .hamburger .menu {
+  width: 24vw;
+  height: 178vw;
+  background: #000000db;
+  position: relative;
+  z-index: 99;
+  margin-left: -4vw;
+  margin-top: -2.5vw;
+  display: none;
+}
+html body header .top .hamburger .menu.display {
+  display: block;
+}
+html body header .top .hamburger .menu .menu-close {
+  width: 10vw;
+  height: 10vw;
+  background: #281600b5;
+  border: 1px solid #f2deae;
+  float: right;
+  text-align: center;
+  line-height: 10vw;
+  color: #f2deae;
+  font-size: 6vw;
+}
+html body header .top .hamburger .menu .menu-colorBox {
+  width: 15vw;
+  height: 134vw;
+  margin: 15vw 0px 0px 4vw;
+  position: absolute;
+}
+html body header .top .hamburger .menu .menu-colorBox .color {
+  width: 9vw;
+  height: 9vw;
+  border-radius: 50%;
+  margin: 3vw auto;
+}
+html body header .top .hamburger .menu .menu-colorBox .color1 {
+  background: #dca246;
+}
+html body header .top .hamburger .menu .menu-colorBox .color2 {
+  background: #f05a00;
+}
+html body header .top .hamburger .menu .menu-colorBox .color3 {
+  background: #2ecfdd;
+}
+html body header .top .hamburger .menu .menu-colorBox .color4 {
+  background: red;
+}
+html body header .top .hamburger .menu .menu-colorBox .color5 {
+  background: greenyellow;
+}
+html body header .top .hamburger .menu .menu-colorBox .color6 {
+  background: blue;
+}
+html body header .top .hamburger .menu .menu-colorBox .color7 {
+  background: wheat;
+}
+html body header .top .hamburger .menu .menu-colorBox .color8 {
+  background: palevioletred;
 }
 html body header .top .logo {
   width: 16vw;
