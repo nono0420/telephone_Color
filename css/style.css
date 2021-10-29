@@ -59,7 +59,7 @@ html body {
 html body .menu {
   width: 23vw;
   height: 178vw;
-  background: #000000db;
+  background: #000000b0;
   position: absolute;
   z-index: 99;
   display: none;
