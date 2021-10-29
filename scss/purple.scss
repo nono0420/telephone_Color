@@ -5,6 +5,77 @@ html body {
     position: relative;
     overflow: hidden;
 
+    .menu {
+        width: 23vw;
+        height: 178vw;
+        background: #000000db;
+        position: absolute;
+        z-index: 99;
+        display: none;
+
+        &.close {
+            display: block;
+        }
+
+        .menu-close {
+            width: 10vw;
+            height: 10vw;
+            background: #281600b5;
+            border: 1px solid #f2deae;
+            float: right;
+            text-align: center;
+            line-height: 10vw;
+            color: #f2deae;
+            font-size: 6vw;
+        }
+
+        .menu-colorBox {
+            width: 15vw;
+            height: 134vw;
+            margin: 15vw 0px 0px 4vw;
+            position: absolute;
+
+            .color {
+                width: 9vw;
+                height: 9vw;
+                border-radius: 50%;
+                margin: 3vw auto;
+            }
+
+            .color1 {
+                background: #dca246;
+            }
+
+            .color2 {
+                background: #f05a00;
+            }
+
+            .color3 {
+                background: #2ecfdd;
+            }
+
+            .color4 {
+                background: red;
+            }
+
+            .color5 {
+                background: greenyellow;
+            }
+
+            .color6 {
+                background: blue;
+            }
+
+            .color7 {
+                background: wheat;
+            }
+
+            .color8 {
+                background: palevioletred;
+            }
+        }
+    }
+
     header {
         width: 100%;
         height: 79vw;
@@ -12,7 +83,7 @@ html body {
         .top {
             width: 100%;
             height: 10vw;
-            background: #281600;
+            background: linear-gradient(to right,#c696f7 0%, #5f97ff 100%);
             position: relative;
             border-radius: 0 0 20px 20px;
             box-shadow: 2px 2px 4px #00000078;
@@ -24,79 +95,6 @@ html body {
                 background-size: 100%;
                 position: absolute;
                 margin: 2.5vw 0 0 4vw;
-
-                .menu {
-                    width: 24vw;
-                    height: 178vw;
-                    background: #000000db;
-                    position: relative;
-                    z-index: 99;
-                    margin-left: -4vw;
-                    margin-top: -2.5vw;
-                    display: none;
-
-                    &.display {
-                        display: block;
-                    }
-
-                    .menu-close {
-                        width: 10vw;
-                        height: 10vw;
-                        background: #281600b5;
-                        border: 1px solid #f2deae;
-                        float: right;
-                        text-align: center;
-                        line-height: 10vw;
-                        color: #f2deae;
-                        font-size: 6vw;
-                    }
-
-                    .menu-colorBox {
-                        width: 15vw;
-                        height: 134vw;
-                        margin: 15vw 0px 0px 4vw;
-                        position: absolute;
-
-                        .color {
-                            width: 9vw;
-                            height: 9vw;
-                            border-radius: 50%;
-                            margin: 3vw auto;
-                        }
-
-                        .color1 {
-                            background: #dca246;
-                        }
-
-                        .color2 {
-                            background: #f05a00;
-                        }
-
-                        .color3 {
-                            background: #2ecfdd;
-                        }
-
-                        .color4 {
-                            background: red;
-                        }
-
-                        .color5 {
-                            background: greenyellow;
-                        }
-
-                        .color6 {
-                            background: blue;
-                        }
-
-                        .color7 {
-                            background: wheat;
-                        }
-
-                        .color8 {
-                            background: palevioletred;
-                        }
-                    }
-                }
             }
 
             .logo{
@@ -158,7 +156,7 @@ html body {
             }
 
             .swiper-pagination-bullet {
-                background: #9b5b35;
+                background: #5148dc;
                 outline: none;
             }
 
@@ -182,15 +180,16 @@ html body {
                 width: 68vw;
                 height: 5vw;
                 background: #fff;
+                border: 1px solid #2b2763;
                 border-radius: 50px;
                 margin: 6px 0 0px 22px;
                 position: absolute;
-                box-shadow: 0px 2px 4px #00000075;
+                box-shadow: 0px 2px 4px #b6b6b6;
 
                 .news-icon {
                     width: 5vw;
                     height: 5vw;
-                    background: url(../img/news-icon.png) no-repeat;
+                    background: url(../img/news-Purple-icon.png) no-repeat;
                     background-size: 100%;
                     position: absolute;
                     margin: 2px 0 0 5px;
@@ -200,7 +199,7 @@ html body {
                     width: 60vw;
                     font-size: 14px;
                     padding-top: 3px;
-                    color: #311700;
+                    color: #3d236a;
                     margin-left: 30px;
                 }
 
@@ -216,9 +215,9 @@ html body {
             .pe-live {
                 width: 18vw;
                 height: 5vw;
-                background: linear-gradient(to right,#2ecfdd 0%,#0c5986 100%);
+                background: linear-gradient(to top,#2350c0 0%, #6192ff 100%);
                 border-radius: 5px;
-                border: 1px solid #35e0fa;
+                border: 1px solid #163cff;
                 position: absolute;
                 margin-left: 77vw;
                 margin-top: 1vw;
@@ -268,7 +267,7 @@ html body {
                     height: 6vw;
 
                     .user {
-                        color: #fffe30;
+                        color: #555555;
                         position: absolute;
                         letter-spacing: 1px;
                         font-size: 3.5vw;
@@ -292,7 +291,7 @@ html body {
                         font-size: 5vw;
                         font-weight: bold;
                         letter-spacing: 1px;
-                        color: #fff;
+                        color: #2468ea;
                         line-height: 7vw;
                     }
 
@@ -302,8 +301,8 @@ html body {
                         font-size: 2vw;
                         position: absolute;
                         border-radius: 50%;
-                        border: 2px solid #fffe30;
-                        color: #fffe30;
+                        border: 2px solid #979797;
+                        color: #979797;
                         margin: -5.5vw 0 0 25vw;
                         text-align: center;
                     }
@@ -312,7 +311,7 @@ html body {
                        div {
                         width: 4vw;
                         height: 4vw;
-                        border: 1px solid #fffe30;
+                        border: 1px solid #979797;
                        }
                     }
                 }
@@ -337,7 +336,7 @@ html body {
                         .img {
                             width: 7.2vw;
                             height: 9vw;
-                            background: url(../img/user-icon.png) no-repeat;
+                            background: url(../img/user-icon-Purple.png) no-repeat;
                         }
 
                         .out {
@@ -354,7 +353,7 @@ html body {
                         .text {
                             position: absolute;
                             font-size: 3.5vw;
-                            color: #fef4d7;
+                            color: #2452c3;
                             font-weight: bold;
                         }
 
@@ -409,14 +408,15 @@ html body {
 
             .main-left-shadwo {
                 width: 12.5vw;
-                height: 22vw;
+                height: 22.5vw;
                 border-radius: 10px 10px 8px 8px;
-                background: linear-gradient(to right, #fcf4db 1%,#fff1c9 43%,#ddcb9f 75%,#fff8e0 100%);
+                background: #c8dbff;
+                box-shadow: 0px 2px 4px #292a8ddb;
 
                 .main-left-btn-1 {
                     width: 12vw;
                     height: 21vw;
-                    background: #301a00;
+                    background: linear-gradient(to bottom, #c68eff 0%, #3879f3 100%);
                     border-radius: 8px;
                     border: 1px solid #fff2ca;
                     margin-top: 1.8vw;
@@ -424,7 +424,7 @@ html body {
                     .text {
                         width: 9vw;
                         height: 10vw;
-                        color: #fff7de;
+                        color: #ffffff;
                         margin: auto;
                         margin-top: 6vw;
                         font-size: 3.2vw;
@@ -442,17 +442,17 @@ html body {
             .main-left-btn {
                 width: 12vw;
                 height: 21vw;
-                background: linear-gradient(to right, #fff7dd 0%,#fff4ca 69%,#ddcb9f 100%);
+                background: linear-gradient(to bottom, #f6f2ff 20%,#cad3ff 100%);
                 border-radius: 10px;
-                border: 1px solid #fdf4d9;
+                border: 1px solid #2e275b;
                 margin-top: 1.8vw;
-                box-shadow: 0px 2px 3px #1913087a;
+                box-shadow: 0px 2px 3px #7682c1;
                 font-weight: bold;
 
                 .text {
                     width: 8vw;
                     height: 10vw;
-                    color: #291300;
+                    color: #2006e5;
                     margin: auto;
                     margin-top: 6vw;
                     font-size: 3.2vw;
@@ -461,7 +461,7 @@ html body {
                     text-align: center;
 
                     div {
-                        color: #633d00;
+                        color: #383838;
                         font-weight: bolder;
                         font-size: 4vw;
                         padding-top: 0.8vw;
@@ -479,7 +479,8 @@ html body {
             .right-box {
                 width: 100%;
                 height: 24vw;
-                background: linear-gradient(to right, #fffbee 0%, #fffae4 55%, #f2deae 100%);
+                background: #ffffff;
+                border: 1px solid #2e275b;
                 border-radius: 10px;
                 margin-bottom: 2.6vw;
                 box-shadow: 1px 2px 3px #1913088a;
@@ -525,13 +526,13 @@ html body {
                             font-size: 1vw;
                             transform: scale(0.9,0.9);
                             font-weight: bold;
-                            color: #0a0a0a;
+                            color: #383838;
                         }
 
                         .number {
                             margin-top: 1vw;
                             font-size: 4.5vw;
-                            color: #291700;
+                            color: #2c6adf;
                             font-weight: bold;
                         }
                     }
@@ -545,7 +546,7 @@ html body {
                         width: 100%;
                         height: 100%;
                         border-radius: 50%;
-                        background: linear-gradient(to bottom right,#e1d2ae 40%, #281600 30%,#672e00 60%,#e0a930  100%);
+                        background: linear-gradient(to bottom right,#d2d2d2 40%, #5148dc 30%,#867eff 60%,#867eff  100%);
                         /* 径向渐变中的 30px 计算方法为 (宽度 / 2 - 边框大小)，此处为 80px / 2 - 10px */
                         mask-image: radial-gradient(transparent 0 29px, #000 31px);
                         -webkit-mask-image: radial-gradient(transparent 0 29px, #000 31px);
@@ -591,14 +592,14 @@ html body {
                         position: absolute;
                         margin-left: -3vw;
                         margin-top: 1vw;
-                        color: #8b443a;
+                        color: #8d8d8d;
                     }
 
                     .no {
                         font-size: 2vw;
                         transform: scale(0.83,0.83);
                         position: absolute;
-                        color: #643612;
+                        color: #265fc8;
                         margin-left: 28vw;
                         margin-top: 1vw;
                     }
@@ -610,18 +611,18 @@ html body {
                         display: -webkit-inline-box;
 
                         div {
-                            color: #1d1000;
+                            color: #323232;
                             font-size: 4.2vw;
                             font-weight: bolder;
                         }
 
                         .import {
-                            color: #7f5b00;
+                            color: #e2a500;
                             font-size: 3.8vw;
                         }
 
                         .vs {
-                            color: #034aaa;
+                            color: #1f04cc;
                             font-size: 3.5vw;
                             line-height: 4vw;
                         }
@@ -632,7 +633,7 @@ html body {
                         height: 5vw;
                         margin: 2vw 0 0 77px;
                         position: absolute;
-                        color: #f05a00;
+                        color: #e62020;
                         font-size: 3.6vw;
                         font-weight: bold;
 
@@ -658,12 +659,12 @@ html body {
     }
     ::-webkit-scrollbar-track {
         border-radius: 3px;
-        background: #7f5b00;
+        background: #d2d2d2;
     }
     
     ::-webkit-scrollbar-thumb {
         border-radius: 3px;
-        background: #e3b476;
+        background: #5f97ff;
     }
 
     footer {
@@ -683,7 +684,7 @@ html body {
         .footer-bar {
             width: 100%;
             height: 19vw;
-            background: url(../img/footer.png) no-repeat;
+            background: url(../img/footer-Purple.png) no-repeat;
             background-size: 100%;
 
             .close {
@@ -694,7 +695,7 @@ html body {
                 float: right;
 
                 .close-text {
-                    color: #fffd3f;
+                    color: #ffffff;
                     float: right; 
                     font-size: 2vw;
 
@@ -704,7 +705,7 @@ html body {
                 }
 
                 .close-text-2 {
-                    color: #fffd3f;
+                    color: #ffffff;
                     float: right; 
                     font-size: 2vw;
                     display: none;
@@ -749,14 +750,13 @@ html body {
                     border-radius: 8px 8px 0 0;
 
                     &:hover,&:active,&.active {
-                        background: linear-gradient(to top,#ffe2a7 0%,#e3b476 40%,#753200 100%);
                         
                         .footer-icon {
                             background-position-y: calc(100% - 2px);
                         }
 
                         .footer-text {
-                            color: #281600;
+                            color: #2006e5;
                         }
                     }
 
@@ -789,7 +789,7 @@ html body {
 
                     .footer-text {
                         font-size: 2vw;
-                        color: #ffe2a6;
+                        color: #ffffff;
                         text-align: center;
                     }
 
@@ -816,9 +816,9 @@ html body {
     .bg {
         width: 100%;
         height: 100%;
-        background-image: url(../img/bg.png);
+        background-image: url(../img/bg-Purple.png);
         background-repeat: no-repeat;
-        background-color: #7c4627;
+        background-color: #452516;
         background-size: 100%;
         position: absolute;
         top: 0;
