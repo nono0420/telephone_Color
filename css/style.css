@@ -129,17 +129,23 @@ html body header .top {
           box-shadow: 2px 2px 4px #00000078;
 }
 html body header .top .hamburger {
-  width: 5vw;
+  width: 7vw;
   height: 7vw;
-  background: url(../img/hamburger.png) no-repeat;
-  background-size: 100%;
   position: absolute;
-  margin: 2.5vw 0 0 4vw;
+  margin: 1.5vw 0 0 3vw;
+}
+html body header .top .hamburger span {
+  width: 6vw;
+  height: 0.9vw;
+  background: #fff;
+  position: relative;
+  margin: 0.9vw auto;
+  display: block;
 }
 html body header .top .logo {
   width: 16vw;
   height: 4vw;
-  background: url(../img/logo.png) no-repeat;
+  background: url(../img/logo-Purple.png) no-repeat;
   background-size: 100%;
   position: absolute;
   padding-top: 10px;
@@ -148,7 +154,7 @@ html body header .top .logo {
 html body header .top .message {
   width: 5vw;
   height: 8vw;
-  background: url(../img/message.png) no-repeat;
+  background: url(../img/message-Purple.png) no-repeat;
   background-size: 100%;
   position: absolute;
   margin: 2.5vw 0 0 90vw;
@@ -194,7 +200,7 @@ html body header .banner .swiper-slide {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  background: url(../img/banner.png) no-repeat;
+  background: url(../img/banner-Purple.png) no-repeat;
   background-size: 100%;
 }
 html body header .news-box {
@@ -296,10 +302,10 @@ html body header .user-box .left .left-top .user {
 html body header .user-box .left .left-top .vip0 {
   width: 11.3vw;
   height: 5vw;
-  background: url(../img/vip0.png) no-repeat;
+  background: url(../img/vip0-Purple.png) no-repeat;
   background-size: 100%;
   position: absolute;
-  margin: 0px 0 0 73px;
+  margin: 0px 0 0 17.5vw;
 }
 html body header .user-box .left .left-bottom {
   width: 100%;
@@ -727,7 +733,7 @@ html body footer .footer-bar ul li:hover .footer-text, html body footer .footer-
 html body footer .footer-bar ul li .footer-icon {
   width: 7vw;
   height: 7.5vw;
-  background: url(../img/footer-icon.png) no-repeat;
+  background: url(../img/footer-icon-Purple.png) no-repeat;
   margin: auto;
 }
 html body footer .footer-bar ul li .home {
@@ -769,7 +775,7 @@ html body .bg {
   height: 100%;
   background-image: url(../img/bg-Purple.png);
   background-repeat: no-repeat;
-  background-color: #452516;
+  background-color: #d4ebf8;
   background-size: 100%;
   position: absolute;
   top: 0;

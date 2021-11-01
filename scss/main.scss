@@ -89,12 +89,19 @@ html body {
             box-shadow: 2px 2px 4px #00000078;
 
             .hamburger {
-                width: 5vw;
+                width: 7vw;
                 height: 7vw;
-                background: url(../img/hamburger.png)no-repeat;
-                background-size: 100%;
                 position: absolute;
-                margin: 2.5vw 0 0 4vw;
+                margin: 1.5vw 0 0 3vw;
+
+                span {
+                    width: 6vw;
+                    height: 0.9vw;
+                    background: #fff1c8;
+                    position: relative;
+                    margin: 0.9vw auto;
+                    display: block;
+                }
             }
 
             .logo{
@@ -278,7 +285,7 @@ html body {
                         background: url(../img/vip0.png) no-repeat;
                         background-size: 100%;
                         position: absolute;
-                        margin: 0px 0 0 73px;
+                        margin: 0px 0 0 17.5vw;
                     }
                 }
 
