@@ -1,54 +1,4 @@
 @charset "UTF-8";
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
 html body {
   width: 100%;
   height: 100%;
@@ -121,7 +71,8 @@ html body header {
 html body header .top {
   width: 100%;
   height: 10vw;
-  background: #ff6c2a;
+  background: -webkit-gradient(linear, left top, right top, from(#caa574), color-stop(26%, #fff1c5), color-stop(76%, #ddc091), to(#caac7e));
+  background: linear-gradient(to right, #caa574 0%, #fff1c5 26%, #ddc091 76%, #caac7e 100%);
   position: relative;
   border-radius: 0 0 20px 20px;
   -webkit-box-shadow: 2px 2px 4px #00000078;
@@ -136,7 +87,7 @@ html body header .top .hamburger {
 html body header .top .hamburger span {
   width: 6vw;
   height: 0.9vw;
-  background: #ffffff;
+  background: #03444a;
   position: relative;
   margin: 0.9vw auto;
   display: block;
@@ -211,7 +162,7 @@ html body header .news-box .news {
   width: 68vw;
   height: 5vw;
   background: #fff;
-  border: 1px solid #ffa729;
+  border: 1px solid #ffd985;
   border-radius: 50px;
   margin: 6px 0 0px 22px;
   position: absolute;
@@ -293,7 +244,7 @@ html body header .user-box .left .left-top {
   height: 6vw;
 }
 html body header .user-box .left .left-top .user {
-  color: #ffffff;
+  color: #ffe79c;
   position: absolute;
   letter-spacing: 1px;
   font-size: 3.5vw;
@@ -314,7 +265,7 @@ html body header .user-box .left .left-bottom span {
   font-size: 5vw;
   font-weight: bold;
   letter-spacing: 1px;
-  color: #fff9cf;
+  color: #fff1c5;
   line-height: 7vw;
 }
 html body header .user-box .left .left-bottom div {
@@ -369,7 +320,7 @@ html body header .user-box .right ul li .score {
 html body header .user-box .right ul li .text {
   position: absolute;
   font-size: 3.5vw;
-  color: #ffffff;
+  color: #fff1c5;
   font-weight: bold;
 }
 @media screen and (max-width: 414px) {
@@ -529,12 +480,12 @@ html body main .main-right .right-box .left .circle div {
   -webkit-transform: scale(0.9, 0.9);
           transform: scale(0.9, 0.9);
   font-weight: bold;
-  color: #b33700;
+  color: #212121;
 }
 html body main .main-right .right-box .left .circle .number {
   margin-top: 1vw;
   font-size: 4.5vw;
-  color: #4b4b4b;
+  color: #005c64;
   font-weight: bold;
 }
 html body main .main-right .right-box .left ::after {
@@ -546,8 +497,8 @@ html body main .main-right .right-box .left ::after {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(40%, #dadada), color-stop(30%, #ff6c2a), color-stop(60%, #ff865f), to(#ffae1b));
-  background: linear-gradient(to bottom right, #dadada 40%, #ff6c2a 30%, #ff865f 60%, #ffae1b 100%);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(40%, #dadada), color-stop(30%, #003034), color-stop(60%, #03444a), to(#00a8a8));
+  background: linear-gradient(to bottom right, #dadada 40%, #003034 30%, #03444a 60%, #00a8a8 100%);
   /* 径向渐变中的 30px 计算方法为 (宽度 / 2 - 边框大小)，此处为 80px / 2 - 10px */
   mask-image: radial-gradient(transparent 0 29px, #000 31px);
   -webkit-mask-image: radial-gradient(transparent 0 29px, #000 31px);
@@ -588,14 +539,14 @@ html body main .main-right .right-box .right .date {
   position: absolute;
   margin-left: -3vw;
   margin-top: 1vw;
-  color: #656565;
+  color: #646464;
 }
 html body main .main-right .right-box .right .no {
   font-size: 2vw;
   -webkit-transform: scale(0.83, 0.83);
           transform: scale(0.83, 0.83);
   position: absolute;
-  color: #ca4628;
+  color: #018284;
   margin-left: 28vw;
   margin-top: 1vw;
 }
@@ -606,7 +557,7 @@ html body main .main-right .right-box .right .main-textBox {
   display: -webkit-inline-box;
 }
 html body main .main-right .right-box .right .main-textBox div {
-  color: #190800;
+  color: #252525;
   font-size: 4.2vw;
   font-weight: bolder;
 }
@@ -624,7 +575,7 @@ html body main .main-right .right-box .right .team {
   height: 5vw;
   margin: 2vw 0 0 77px;
   position: absolute;
-  color: #1fac8e;
+  color: #ff6f17;
   font-size: 3.6vw;
   font-weight: bold;
 }
@@ -642,11 +593,11 @@ html body ::-webkit-scrollbar {
 }
 html body ::-webkit-scrollbar-track {
   border-radius: 3px;
-  background: #a13200;
+  background: #003034;
 }
 html body ::-webkit-scrollbar-thumb {
   border-radius: 3px;
-  background: #ffcaa7;
+  background: #fff1c5;
 }
 html body footer {
   width: 100%;
@@ -772,8 +723,8 @@ html body footer .footer-bar.display {
 html body .bg {
   width: 100%;
   height: 100%;
-  background-image: url(../img/bg-Orange.png);
-  background-repeat: no-repeat;
+  background: -webkit-gradient(linear, left bottom, left top, from(#03444a), to(#138f9a));
+  background: linear-gradient(to top, #03444a 0%, #138f9a 100%);
   background-size: 100%;
   position: absolute;
   top: 0;
