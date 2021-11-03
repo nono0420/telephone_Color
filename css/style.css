@@ -144,7 +144,7 @@ html body header .top .hamburger span {
 html body header .top .logo {
   width: 16vw;
   height: 4vw;
-  background: url(../img/logo_Green.png) no-repeat;
+  background: url(../img/logo_Orange.png) no-repeat;
   background-size: 100%;
   position: absolute;
   padding-top: 10px;
@@ -153,7 +153,7 @@ html body header .top .logo {
 html body header .top .message {
   width: 5vw;
   height: 8vw;
-  background: url(../img/message_Green.png) no-repeat;
+  background: url(../img/message_Orange.png) no-repeat;
   background-size: 100%;
   position: absolute;
   margin: 2.5vw 0 0 90vw;
@@ -199,7 +199,7 @@ html body header .banner .swiper-slide {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  background: url(../img/banner-Greene.png) no-repeat;
+  background: url(../img/banner-Orange.png) no-repeat;
   background-size: 100%;
 }
 html body header .news-box {
@@ -244,10 +244,10 @@ html body header .news-box .news marquee {
 html body header .news-box .pe-live {
   width: 18vw;
   height: 5vw;
-  background: -webkit-gradient(linear, left top, right top, from(#fad43e), to(#ff3c00));
-  background: linear-gradient(to right, #fad43e 0%, #ff3c00 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#3aefff), to(#007874));
+  background: linear-gradient(to right, #3aefff 0%, #007874 100%);
   border-radius: 5px;
-  border: 1px solid #ffdfb1;
+  border: 1px solid #2ae2ef;
   position: absolute;
   margin-left: 77vw;
   margin-top: 1vw;
@@ -416,24 +416,24 @@ html body main .main-left .main-left-shadwo {
   width: 12.5vw;
   height: 22.5vw;
   border-radius: 10px 10px 8px 8px;
-  background: -webkit-gradient(linear, left top, right top, color-stop(4%, #9b7a2f), color-stop(42%, #fffcf2), color-stop(59%, #fff4cb), color-stop(86%, #dfc07b), to(#9b7a2f));
-  background: linear-gradient(to right, #9b7a2f 4%, #fffcf2 42%, #fff4cb 59%, #dfc07b 86%, #9b7a2f 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#b93e02), color-stop(57%, #ffece4), color-stop(74%, #ff9c5a), color-stop(94%, #b83d02), to(#b93e02));
+  background: linear-gradient(to right, #b93e02 0%, #ffece4 57%, #ff9c5a 74%, #b83d02 94%, #b93e02 100%);
   -webkit-box-shadow: 0px 2px 4px #232323;
           box-shadow: 0px 2px 4px #232323;
 }
 html body main .main-left .main-left-shadwo .main-left-btn-1 {
   width: 12vw;
   height: 21vw;
-  background: -webkit-gradient(linear, left top, left bottom, from(#fff9e8), color-stop(40%, #fff1c5), to(#e0c997));
-  background: linear-gradient(to bottom, #fff9e8 0%, #fff1c5 40%, #e0c997 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffcaa7), color-stop(40%, #ff6e16), to(#a13200));
+  background: linear-gradient(to bottom, #ffcaa7 0%, #ff6e16 40%, #a13200 100%);
   border-radius: 8px;
-  border: 1px solid #eed598;
+  border: 1px solid #ffb052;
   margin-top: 1.8vw;
 }
 html body main .main-left .main-left-shadwo .main-left-btn-1 .text {
   width: 9vw;
   height: 10vw;
-  color: #3d3d3d;
+  color: #ffffff;
   font-weight: bold;
   margin: auto;
   margin-top: 6vw;
@@ -448,9 +448,10 @@ html body main .main-left .main-left-shadwo .main-left-btn-1 .text div {
 html body main .main-left .main-left-btn {
   width: 12vw;
   height: 21vw;
-  background: #f7f7f7;
+  background: -webkit-gradient(linear, left bottom, left top, from(#caa574), color-stop(0%, #b0b0b0), color-stop(34%, #ffffff), color-stop(54%, #f7f7f7));
+  background: linear-gradient(to top, #caa574 0%, #b0b0b0 0%, #ffffff 34%, #f7f7f7 54%);
   border-radius: 10px;
-  border: 1px solid #eed598;
+  border: 1px solid #ffffff;
   margin-top: 1.8vw;
   -webkit-box-shadow: 0px 2px 3px #232323;
           box-shadow: 0px 2px 3px #232323;
@@ -468,7 +469,7 @@ html body main .main-left .main-left-btn .text {
   text-align: center;
 }
 html body main .main-left .main-left-btn .text div {
-  color: #009dac;
+  color: #ff6f19;
   font-weight: bolder;
   font-size: 4vw;
   padding-top: 0.8vw;
@@ -492,7 +493,7 @@ html body main .main-right .right-box {
 html body main .main-right .right-box .triangle {
   width: 10vw;
   height: 10vw;
-  background: url(../img/triangle_Green.png) no-repeat;
+  background: url(../img/triangle_Orange.png) no-repeat;
   background-size: 100%;
   position: absolute;
   margin: -3px 0 0 -3px;
@@ -500,7 +501,7 @@ html body main .main-right .right-box .triangle {
 html body main .main-right .right-box .triangle-2 {
   width: 10vw;
   height: 10vw;
-  background: url(../img/triangle-2_Green.png) no-repeat;
+  background: url(../img/triangle-2_Orange.png) no-repeat;
   background-size: 100%;
   position: absolute;
   margin: 14.4vw 0 0 60.4vw;
@@ -642,11 +643,11 @@ html body ::-webkit-scrollbar {
 }
 html body ::-webkit-scrollbar-track {
   border-radius: 3px;
-  background: #a13200;
+  background: #cacaca;
 }
 html body ::-webkit-scrollbar-thumb {
   border-radius: 3px;
-  background: #ffcaa7;
+  background: #fff;
 }
 html body footer {
   width: 100%;
@@ -664,7 +665,7 @@ html body footer .close-close {
 html body footer .footer-bar {
   width: 100%;
   height: 19vw;
-  background: url(../img/footer_Green.png) no-repeat;
+  background: url(../img/footer_Orange.png) no-repeat;
   background-size: 100%;
 }
 html body footer .footer-bar .close {
@@ -727,7 +728,7 @@ html body footer .footer-bar ul li:hover .footer-icon, html body footer .footer-
   background-position-y: calc(100% - 2px);
 }
 html body footer .footer-bar ul li:hover .footer-text, html body footer .footer-bar ul li:active .footer-text, html body footer .footer-bar ul li.active .footer-text {
-  color: #18bdbe;
+  color: #ffffff;
 }
 html body footer .footer-bar ul li .footer-icon {
   width: 7vw;
@@ -752,7 +753,7 @@ html body footer .footer-bar ul li .me {
 }
 html body footer .footer-bar ul li .footer-text {
   font-size: 2vw;
-  color: #035257;
+  color: #ffffff;
   text-align: center;
 }
 @media screen and (max-width: 360px) {
