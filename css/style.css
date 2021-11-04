@@ -145,7 +145,7 @@ html body header .top .hamburger span {
 html body header .top .logo {
   width: 16vw;
   height: 4vw;
-  background: url(../img/logo_Orange.png) no-repeat;
+  background: url(../img/logo_Red.png) no-repeat;
   background-size: 100%;
   position: absolute;
   padding-top: 10px;
@@ -154,7 +154,7 @@ html body header .top .logo {
 html body header .top .message {
   width: 5vw;
   height: 8vw;
-  background: url(../img/message_Orange.png) no-repeat;
+  background: url(../img/message_Red.png) no-repeat;
   background-size: 100%;
   position: absolute;
   margin: 2.5vw 0 0 90vw;
@@ -200,7 +200,7 @@ html body header .banner .swiper-slide {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  background: url(../img/banner-Orange.png) no-repeat;
+  background: url(../img/banner-Red.png) no-repeat;
   background-size: 100%;
 }
 html body header .news-box {
@@ -303,7 +303,7 @@ html body header .user-box .left .left-top .user {
 html body header .user-box .left .left-top .vip0 {
   width: 11.3vw;
   height: 5vw;
-  background: url(../img/vip0_Green.png) no-repeat;
+  background: url(../img/vip0-Red.png) no-repeat;
   background-size: 100%;
   position: absolute;
   margin: 0px 0 0 17.5vw;
@@ -325,8 +325,8 @@ html body header .user-box .left .left-bottom div {
   font-size: 2vw;
   position: absolute;
   border-radius: 50%;
-  border: 2px solid #eaeaea;
-  color: #eaeaea;
+  border: 2px solid #868686;
+  color: #868686;
   margin: -5.5vw 0 0 25vw;
   text-align: center;
 }

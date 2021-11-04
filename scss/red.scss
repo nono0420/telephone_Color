@@ -107,7 +107,7 @@ html body {
             .logo{
                 width: 16vw;
                 height: 4vw;
-                background: url(../img/logo_Orange.png)no-repeat;
+                background: url(../img/logo_Red.png)no-repeat;
                 background-size: 100%;
                 position: absolute;
                 padding-top: 10px;
@@ -117,7 +117,7 @@ html body {
             .message {
                 width: 5vw;
                 height: 8vw;
-                background: url(../img/message_Orange.png) no-repeat;
+                background: url(../img/message_Red.png) no-repeat;
                 background-size: 100%;
                 position: absolute;
                 margin: 2.5vw 0 0 90vw;
@@ -172,7 +172,7 @@ html body {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            background: url(../img/banner-Orange.png)no-repeat;
+            background: url(../img/banner-Red.png)no-repeat;
             background-size: 100%;
             }
         }
@@ -283,7 +283,7 @@ html body {
                     .vip0 {
                         width: 11.3vw;
                         height: 5vw;
-                        background: url(../img/vip0_Green.png) no-repeat;
+                        background: url(../img/vip0-Red.png) no-repeat;
                         background-size: 100%;
                         position: absolute;
                         margin: 0px 0 0 17.5vw;
@@ -308,8 +308,8 @@ html body {
                         font-size: 2vw;
                         position: absolute;
                         border-radius: 50%;
-                        border: 2px solid #eaeaea;
-                        color: #eaeaea;
+                        border: 2px solid #868686;
+                        color: #868686;
                         margin: -5.5vw 0 0 25vw;
                         text-align: center;
                     }
