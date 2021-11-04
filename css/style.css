@@ -121,7 +121,8 @@ html body header {
 html body header .top {
   width: 100%;
   height: 10vw;
-  background: #ff6c2a;
+  background: -webkit-gradient(linear, left top, right top, from(#440204), to(#93000b));
+  background: linear-gradient(to right, #440204 0%, #93000b 100%);
   position: relative;
   border-radius: 0 0 20px 20px;
   -webkit-box-shadow: 2px 2px 4px #00000078;
@@ -136,7 +137,7 @@ html body header .top .hamburger {
 html body header .top .hamburger span {
   width: 6vw;
   height: 0.9vw;
-  background: #ffffff;
+  background: #fff1c8;
   position: relative;
   margin: 0.9vw auto;
   display: block;
@@ -190,7 +191,7 @@ html body header .banner .swiper-horizontal > .swiper-pagination-bullets, html b
   bottom: 16px;
 }
 html body header .banner .swiper-pagination-bullet {
-  background: #009dac;
+  background: #f05a00;
   outline: none;
 }
 html body header .banner .swiper-slide {
@@ -210,8 +211,9 @@ html body header .news-box {
 html body header .news-box .news {
   width: 68vw;
   height: 5vw;
-  background: #fff;
-  border: 1px solid #ffa729;
+  background: -webkit-gradient(linear, left top, right top, color-stop(1%, #fff6d8), color-stop(23%, #dcc691), color-stop(23%, #dcc691), color-stop(53%, #faebbf), color-stop(85%, #dcc691), color-stop(85%, #dcc691), to(#fffae0));
+  background: linear-gradient(to right, #fff6d8 1%, #dcc691 23%, #dcc691 23%, #faebbf 53%, #dcc691 85%, #dcc691 85%, #fffae0 100%);
+  border: 1px solid #fffdcf;
   border-radius: 50px;
   margin: 6px 0 0px 22px;
   position: absolute;
@@ -221,7 +223,7 @@ html body header .news-box .news {
 html body header .news-box .news .news-icon {
   width: 5vw;
   height: 5vw;
-  background: url(../img/news-Green-icon.png) no-repeat;
+  background: url(../img/news-Red-icon.png) no-repeat;
   background-size: 100%;
   position: absolute;
   margin: 2px 0 0 5px;
@@ -230,7 +232,7 @@ html body header .news-box .news marquee {
   width: 60vw;
   font-size: 14px;
   padding-top: 3px;
-  color: #1a1a1a;
+  color: #372700;
   margin-left: 30px;
 }
 @media screen and (max-width: 320px) {
@@ -244,10 +246,10 @@ html body header .news-box .news marquee {
 html body header .news-box .pe-live {
   width: 18vw;
   height: 5vw;
-  background: -webkit-gradient(linear, left top, right top, from(#3aefff), to(#007874));
-  background: linear-gradient(to right, #3aefff 0%, #007874 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#2ecfdd), to(#00126c));
+  background: linear-gradient(to right, #2ecfdd 0%, #00126c 100%);
   border-radius: 5px;
-  border: 1px solid #2ae2ef;
+  border: 1px solid #246fcb;
   position: absolute;
   margin-left: 77vw;
   margin-top: 1vw;
@@ -293,7 +295,7 @@ html body header .user-box .left .left-top {
   height: 6vw;
 }
 html body header .user-box .left .left-top .user {
-  color: #ffffff;
+  color: #c30d21;
   position: absolute;
   letter-spacing: 1px;
   font-size: 3.5vw;
@@ -314,7 +316,7 @@ html body header .user-box .left .left-bottom span {
   font-size: 5vw;
   font-weight: bold;
   letter-spacing: 1px;
-  color: #fff9cf;
+  color: #620003;
   line-height: 7vw;
 }
 html body header .user-box .left .left-bottom div {
@@ -323,8 +325,8 @@ html body header .user-box .left .left-bottom div {
   font-size: 2vw;
   position: absolute;
   border-radius: 50%;
-  border: 2px solid #cacaca;
-  color: #cacaca;
+  border: 2px solid #eaeaea;
+  color: #eaeaea;
   margin: -5.5vw 0 0 25vw;
   text-align: center;
 }
@@ -354,7 +356,7 @@ html body header .user-box .right ul li {
 html body header .user-box .right ul li .img {
   width: 7.2vw;
   height: 9vw;
-  background: url(../img/user-icon-Green.png) no-repeat;
+  background: url(../img/user-icon-Orange.png) no-repeat;
 }
 html body header .user-box .right ul li .out {
   background-position-x: calc(100% + 53px);
@@ -369,8 +371,7 @@ html body header .user-box .right ul li .score {
 html body header .user-box .right ul li .text {
   position: absolute;
   font-size: 3.5vw;
-  color: #ffffff;
-  font-weight: bold;
+  color: #4c0407;
 }
 @media screen and (max-width: 414px) {
   html body header .user-box .right ul li .img {
@@ -416,18 +417,18 @@ html body main .main-left .main-left-shadwo {
   width: 12.5vw;
   height: 22.5vw;
   border-radius: 10px 10px 8px 8px;
-  background: -webkit-gradient(linear, left top, right top, from(#b93e02), color-stop(57%, #ffece4), color-stop(74%, #ff9c5a), color-stop(94%, #b83d02), to(#b93e02));
-  background: linear-gradient(to right, #b93e02 0%, #ffece4 57%, #ff9c5a 74%, #b83d02 94%, #b93e02 100%);
-  -webkit-box-shadow: 0px 2px 4px #232323;
-          box-shadow: 0px 2px 4px #232323;
+  background: -webkit-gradient(linear, left top, right top, from(#ddcb9f), color-stop(57%, #fcf4db), color-stop(74%, #fff1c9), color-stop(94%, #ddcb9f), to(#fff8e0));
+  background: linear-gradient(to right, #ddcb9f 0%, #fcf4db 57%, #fff1c9 74%, #ddcb9f 94%, #fff8e0 100%);
+  -webkit-box-shadow: 0px 2px 4px #232323a3;
+          box-shadow: 0px 2px 4px #232323a3;
 }
 html body main .main-left .main-left-shadwo .main-left-btn-1 {
   width: 12vw;
   height: 21vw;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffcaa7), color-stop(40%, #ff6e16), to(#a13200));
-  background: linear-gradient(to bottom, #ffcaa7 0%, #ff6e16 40%, #a13200 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#c51a2d), to(#440204));
+  background: linear-gradient(to bottom, #c51a2d 0%, #440204 100%);
   border-radius: 8px;
-  border: 1px solid #ffb052;
+  border: 1px solid #fff2ca;
   margin-top: 1.8vw;
 }
 html body main .main-left .main-left-shadwo .main-left-btn-1 .text {
@@ -448,19 +449,17 @@ html body main .main-left .main-left-shadwo .main-left-btn-1 .text div {
 html body main .main-left .main-left-btn {
   width: 12vw;
   height: 21vw;
-  background: -webkit-gradient(linear, left bottom, left top, from(#caa574), color-stop(0%, #b0b0b0), color-stop(34%, #ffffff), color-stop(54%, #f7f7f7));
-  background: linear-gradient(to top, #caa574 0%, #b0b0b0 0%, #ffffff 34%, #f7f7f7 54%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#ffbfa5), to(#fff9f6));
+  background: linear-gradient(to top, #ffbfa5 0%, #fff9f6 100%);
   border-radius: 10px;
-  border: 1px solid #ffffff;
+  border: 1px solid #4d0407;
   margin-top: 1.8vw;
-  -webkit-box-shadow: 0px 2px 3px #232323;
-          box-shadow: 0px 2px 3px #232323;
   font-weight: bold;
 }
 html body main .main-left .main-left-btn .text {
   width: 8vw;
   height: 10vw;
-  color: #3d3d3d;
+  color: #00050d;
   margin: auto;
   margin-top: 6vw;
   font-size: 3.2vw;
@@ -469,7 +468,7 @@ html body main .main-left .main-left-btn .text {
   text-align: center;
 }
 html body main .main-left .main-left-btn .text div {
-  color: #ff6f19;
+  color: #ae0013;
   font-weight: bolder;
   font-size: 4vw;
   padding-top: 0.8vw;
@@ -643,11 +642,11 @@ html body ::-webkit-scrollbar {
 }
 html body ::-webkit-scrollbar-track {
   border-radius: 3px;
-  background: #cacaca;
+  background: #3d3d3d;
 }
 html body ::-webkit-scrollbar-thumb {
   border-radius: 3px;
-  background: #fff;
+  background: #cacaca;
 }
 html body footer {
   width: 100%;
@@ -724,6 +723,10 @@ html body footer .footer-bar ul li {
   margin-left: 1vw;
   border-radius: 8px 8px 0 0;
 }
+html body footer .footer-bar ul li:hover, html body footer .footer-bar ul li:active, html body footer .footer-bar ul li.active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#651f00), to(#ff4f00));
+  background: linear-gradient(to bottom, #651f00 0%, #ff4f00 100%);
+}
 html body footer .footer-bar ul li:hover .footer-icon, html body footer .footer-bar ul li:active .footer-icon, html body footer .footer-bar ul li.active .footer-icon {
   background-position-y: calc(100% - 2px);
 }
@@ -733,7 +736,7 @@ html body footer .footer-bar ul li:hover .footer-text, html body footer .footer-
 html body footer .footer-bar ul li .footer-icon {
   width: 7vw;
   height: 7.5vw;
-  background: url(../img/footer-icon-Green.png) no-repeat;
+  background: url(../img/footer-icon-Orange.png) no-repeat;
   margin: auto;
 }
 html body footer .footer-bar ul li .home {
@@ -773,9 +776,10 @@ html body footer .footer-bar.display {
 html body .bg {
   width: 100%;
   height: 100%;
-  background-image: url(../img/bg-Orange.png);
+  background-image: url(../img/bg-Red.png);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-color: #fff7f2;
+  background-size: cover;
   position: absolute;
   top: 0;
   left: 0;

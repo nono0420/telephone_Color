@@ -83,7 +83,7 @@ html body {
         .top {
             width: 100%;
             height: 10vw;
-            background: #ff6c2a;
+            background: linear-gradient(to right,#440204 0%, #93000b 100%);
             position: relative;
             border-radius: 0 0 20px 20px;
             box-shadow: 2px 2px 4px #00000078;
@@ -97,7 +97,7 @@ html body {
                 span {
                     width: 6vw;
                     height: 0.9vw;
-                    background: #ffffff;
+                    background: #fff1c8;
                     position: relative;
                     margin: 0.9vw auto;
                     display: block;
@@ -186,8 +186,8 @@ html body {
             .news {
                 width: 68vw;
                 height: 5vw;
-                background: #fff;
-                border: 1px solid #ffa729;
+                background: linear-gradient(to right, #fff6d8 1%,#dcc691 23%,#dcc691 23%,#faebbf 53%,#dcc691 85%,#dcc691 85%,#fffae0 100%);
+                border: 1px solid #fffdcf;
                 border-radius: 50px;
                 margin: 6px 0 0px 22px;
                 position: absolute;
@@ -196,7 +196,7 @@ html body {
                 .news-icon {
                     width: 5vw;
                     height: 5vw;
-                    background: url(../img/news-Orange-icon.png) no-repeat;
+                    background: url(../img/news-Red-icon.png) no-repeat;
                     background-size: 100%;
                     position: absolute;
                     margin: 2px 0 0 5px;
@@ -206,7 +206,7 @@ html body {
                     width: 60vw;
                     font-size: 14px;
                     padding-top: 3px;
-                    color: #1a1a1a;
+                    color: #372700;
                     margin-left: 30px;
                 }
 
@@ -222,9 +222,9 @@ html body {
             .pe-live {
                 width: 18vw;
                 height: 5vw;
-                background: linear-gradient(to right,#3aefff 0%, #007874 100%);
+                background: linear-gradient(to right,#2ecfdd 0%, #00126c 100%);
                 border-radius: 5px;
-                border: 1px solid #2ae2ef;
+                border: 1px solid #246fcb;
                 position: absolute;
                 margin-left: 77vw;
                 margin-top: 1vw;
@@ -274,7 +274,7 @@ html body {
                     height: 6vw;
 
                     .user {
-                        color: #ffffff;
+                        color: #c30d21;
                         position: absolute;
                         letter-spacing: 1px;
                         font-size: 3.5vw;
@@ -298,7 +298,7 @@ html body {
                         font-size: 5vw;
                         font-weight: bold;
                         letter-spacing: 1px;
-                        color: #fff9cf;
+                        color: #620003;
                         line-height: 7vw;
                     }
 
@@ -360,7 +360,7 @@ html body {
                         .text {
                             position: absolute;
                             font-size: 3.5vw;
-                            color: #ffffff;
+                            color: #4c0407;
                             // font-weight: bold;
                         }
 
@@ -417,15 +417,15 @@ html body {
                 width: 12.5vw;
                 height: 22.5vw;
                 border-radius: 10px 10px 8px 8px;
-                background: linear-gradient(to right, #b93e02 0%, #ffece4 57%, #ff9c5a 74%, #b83d02 94%, #b93e02 100%);
-                box-shadow: 0px 2px 4px #232323;
+                background: linear-gradient(to right, #ddcb9f 0%, #fcf4db 57%, #fff1c9 74%, #ddcb9f 94%, #fff8e0 100%);
+                box-shadow: 0px 2px 4px #232323a3;
 
                 .main-left-btn-1 {
                     width: 12vw;
                     height: 21vw;
-                    background: linear-gradient(to bottom, #ffcaa7 0%,#ff6e16 40%, #a13200 100%);
+                    background: linear-gradient(to bottom, #c51a2d 0%, #440204 100%);
                     border-radius: 8px;
-                    border: 1px solid #ffb052;
+                    border: 1px solid #fff2ca;
                     margin-top: 1.8vw;
     
                     .text {
@@ -450,17 +450,17 @@ html body {
             .main-left-btn {
                 width: 12vw;
                 height: 21vw;
-                background: linear-gradient(to top, #caa574 0%, #b0b0b0 0%, #ffffff 34%, #f7f7f7 54%);
+                background: linear-gradient(to top, #ffbfa5 0%, #fff9f6 100%);
                 border-radius: 10px;
-                border: 1px solid #ffffff;
+                border: 1px solid #4d0407;
                 margin-top: 1.8vw;
-                box-shadow: 0px 2px 3px #232323;
+                // box-shadow: 0px 2px 3px #232323;
                 font-weight: bold;
 
                 .text {
                     width: 8vw;
                     height: 10vw;
-                    color: #3d3d3d;
+                    color: #00050d;
                     margin: auto;
                     margin-top: 6vw;
                     font-size: 3.2vw;
@@ -469,7 +469,7 @@ html body {
                     text-align: center;
 
                     div {
-                        color: #ff6f19;
+                        color: #ae0013;
                         font-weight: bolder;
                         font-size: 4vw;
                         padding-top: 0.8vw;
@@ -825,10 +825,10 @@ html body {
     .bg {
         width: 100%;
         height: 100%;
-        background-image: url(../img/bg-Orange.png);
+        background-image: url(../img/bg-Red.png);
         background-repeat: no-repeat;
-        background-color: #1e1e1e;
-        background-size: 100%;
+        background-color: #fff7f2;
+        background-size: cover;
         position: absolute;
         top: 0;
         left: 0;
