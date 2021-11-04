@@ -356,7 +356,7 @@ html body header .user-box .right ul li {
 html body header .user-box .right ul li .img {
   width: 7.2vw;
   height: 9vw;
-  background: url(../img/user-icon-Orange.png) no-repeat;
+  background: url(../img/user-icon-Red.png) no-repeat;
 }
 html body header .user-box .right ul li .out {
   background-position-x: calc(100% + 53px);
